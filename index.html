@@ -9,11 +9,39 @@
 		article>p {color:chartreuse;
 		font-size: 14px; 
 		}
-		p {color: brown;}
+		p {color: brown;
+		}
+		header li {
+			list-style: none;
+		}
+		header a:link , a:visited {
+			text-decoration: none;
+			background-color: cyan;
+			color: fuchsia;
+			display: block;
+			width: 200px;
+			text-align: left;
+			margin-bottom: 2px;
+		}
+		header a:hover , a:active {
+			background-color: yellow;
+		}
+		header li:nth-child(2):hover ,a:active {
+			font-size: 22px;
+		}
+
 	</style>
 </head>
 
 <body>
+
+	<header>
+		<ul>
+			<li><a href="www.google.com" target="_blank" title="Google Search Engine">Google Search Engine</a></li>
+			<li><a href="www.VScode.com" target="_blank" title="Home">Home</a></li>
+			<li><a href="www.css.com" target="_blank" title="css">Whats to learn </a></li>
+		</ul>
+	</header>
 	<h1>What to do next </h1>
 	<p id="sego">Mine is commiting all </p>
 	<article>
