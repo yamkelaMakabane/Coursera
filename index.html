@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		article>p {color:chartreuse;
-		font-size: 14px; 
+		body {
+			background-image: url('https://img.freepik.com/premium-vector/production-automation-flat-vector-illustration-male-female-factory-workers-engineers-cartoon-characters-smart-manufacturing-process-robotic-equipment-futuristic-high-tech-machinery_126283-2673.jpg?w=2000');
 		}
+		
 		p {color: brown;
 		}
 		header li {
@@ -16,10 +17,10 @@
 		}
 		header a:link , a:visited {
 			text-decoration: none;
-			background-color: cyan;
-			color: fuchsia;
+			background-color: rgb(106, 110, 148);
+			color: rgba(17, 15, 17, 0.879);
 			display: block;
-			width: 200px;
+			width: 400px;
 			text-align: left;
 			margin-bottom: 2px;
 		}
@@ -29,21 +30,37 @@
 		header li:nth-child(2):hover ,a:active {
 			font-size: 22px;
 		}
+		body label, select {
+			color: brown;
+			text-align: left;
+			font-size: 22px;
+		}
 
 	</style>
 </head>
-
 <body>
 
 	<header>
 		<ul>
-			<li><a href="www.google.com" target="_blank" title="Google Search Engine">Google Search Engine</a></li>
-			<li><a href="www.VScode.com" target="_blank" title="Home">Home</a></li>
-			<li><a href="www.css.com" target="_blank" title="css">Whats to learn </a></li>
+			<li><a href="www.google.com" target="_blank" title="Google Search Engine">Laser Measuring Machine</a></li>
+			<li><a href="www.VScode.com" target="_blank" title="Home">ACL's</a></li>
+			<li><a href="www.css.com" target="_blank" title="css">Markator and Torque Controllers </a></li>
 		</ul>
 	</header>
-	<h1>What to do next </h1>
-	<p id="sego">Mine is commiting all </p>
+
+	<h1 style="text-align: center;">Tenneco Equipment Register  </h1>
+	<p style="text-align: center;"> This Web application was created with the sole purpose of keeping track of maintenance inventry  </p>
+
+	<Label for="Personnel">User Logging in </Label>
+	<select name="Personnel" id="Personnel">
+		<option value="---">None</option>
+		<option value="Yamkela">Yamkela</option>
+		<option value="Derek">Derek</option>
+		<option value="Lawrence">Lawrence</option>
+		<option value="Wallace">Wallace</option>
+		<option value="Andiswa">Andiswa</option>
+	</select>
+	
 	<article>
 		<p class="Yara">Is this class the direct child of the article ?</p>
 	</article>
