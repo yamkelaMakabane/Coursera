@@ -35,6 +35,16 @@
 			text-align: left;
 			font-size: 22px;
 		}
+		input {
+			font-size: 22px;
+			background-color: bisque;
+			width: 400px;
+			border-color: blue;
+			height: 50px;
+		}
+		input:hover {
+			background-color: rgb(191, 49, 79);
+		}
 
 	</style>
 </head>
@@ -67,5 +77,18 @@
 	<p>where is <a href="www.manutd.com" target="_blank" title="old trafford">Old Trafford</a> ?</p>
 	<p>There should be insertions being pushed to github</p>
 	<p>Try remember how we commit and push to github so we move on to pulling from </p>
+
+	<p>Please select which Department you work for ?</p>
+	<input type="button" value="Weld Technicians" onclick="Weld()" ></input>
+	<script>
+		function Weld() {
+			window.location.assign("download.htm")
+		}
+	</script>
+	<h2 id="Tech" onclick="Tech()">Automation</h2>
+	<h2 id="Mech" onclick="Mech()">Mechanician</h2>
+	<h2 id="Tool" onclick="Tool()">Toolmaker</h2>
+
+
 </body>
 </html>
