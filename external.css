@@ -1,0 +1,62 @@
+p {color: brown;
+}
+header li {
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+}
+header a:link , a:visited {
+    text-decoration: none;
+    background-color: rgb(106, 110, 148);
+    color: rgba(17, 15, 17, 0.879);
+    display: block;
+    width: 400px;
+    text-align: left;
+    margin-bottom: 2px;
+}
+header a:hover , a:active {
+    background-color: yellow;
+}
+#inbox {
+    font-size: 18px;
+    color: black;
+    background-color: darkblue;
+    padding: 3px;
+    margin: 10px 10px 10px 250px;
+    
+
+}
+#box {
+    background-color: aliceblue;
+    text-align: center;
+}
+header li:nth-child(2):hover ,a:active {
+    font-size: 22px;
+}
+body label, select {
+    color: brown;
+    text-align: left;
+    font-size: 22px;
+}
+input {
+    font-size: 22px;
+    background-color: bisque;
+    width: 100%;
+    border-color: rgb(57, 65, 220);
+    height: 50px;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+#Spares { 
+    float: left;
+    width: 25%;
+} 
+#Reports {
+    background-color: aqua;
+    float: left;
+    width: 60%;
+    margin: 10px 0px 10px 20px;
+}
+#Reports input {
+    width: 33%;
+}

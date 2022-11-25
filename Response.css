@@ -1,0 +1,25 @@
+#header-nav {
+    background-color: aquamarine;
+}
+
+#navbar-brand {
+    float: left;
+}
+#log {
+    background: url('../Coursera/Tenneco.jpg') no-repeat;
+    background-size: 150px;
+    height: 150px;
+    width: 150px;
+    margin-left: 10px;
+}
+a {
+    float:left;
+}
+p span {
+    text-align: center;
+    margin-left: 50px;
+    font-size: 35px;
+}
+.navbar-brand p{
+    margin-top: 50px;
+}

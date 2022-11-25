@@ -1,0 +1,88 @@
+.Spares {
+    margin-bottom: 5px;
+}
+
+.Bord {
+    width: 30%; 
+    background-color: rgb(242, 232, 232);
+    border: 4px solid black;
+    float: left;
+    border-radius: 10px;
+}
+input {
+    font-size: 22px;
+    background-color: rgb(249, 245, 242);
+    width: 90%;
+    border-color: rgb(142, 147, 233);
+    height: 50px;
+    padding: 2px;
+    margin: 5px 0px 5px 10px;
+    border-radius: 15px;
+}
+input:hover {
+    background-color: rgb(111, 212, 229);
+}
+.big {
+    width: 69%;
+    background-color: rgb(242, 232, 232);
+    float: right;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#Reports input {
+    width: 90%;
+    float: left;
+}
+#ten a {
+    background-color: rgb(142, 202, 234);
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+}
+#ten a:hover  {
+    background-color: rgb(207, 180, 82);
+}
+#Add p {
+    background-color: rgb(142, 202, 234);
+    color: black;
+    display: block;
+    width: 25%;
+}
+#Add p:hover {
+    background-color: rgb(207, 180, 82);
+}
+#box {
+    background-color: aliceblue;
+    text-align: center;
+    width: 800px;
+    margin-left: 200px;
+}
+#header-nav {
+    background-color: rgb(136, 170, 175);
+    border-radius: 5px;
+}
+#log {
+    background: url('../Coursera/Tenneco.jpg') no-repeat;
+    background-size: 150px;
+    height: 150px;
+    width: 150px;
+    margin-left: 10px;
+}
+.navbar-brand a:hover , .navbar-brand a {
+    text-decoration: none;
+    font-size: 40px;
+    line-height: .75;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.navbar-brand {
+margin-top: 30px;
+font-size: 40px;
+padding: 5px;
+vertical-align: middle;
+}
+button {
+    appearance: butt;
+}
+
+    

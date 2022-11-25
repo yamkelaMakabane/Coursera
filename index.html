@@ -5,90 +5,86 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="external.css">
 	<style>
+		* {
+			box-sizing: border-box;
+		}
 		body {
 			background-image: url('https://img.freepik.com/premium-vector/production-automation-flat-vector-illustration-male-female-factory-workers-engineers-cartoon-characters-smart-manufacturing-process-robotic-equipment-futuristic-high-tech-machinery_126283-2673.jpg?w=2000');
 		}
-		
-		p {color: brown;
-		}
-		header li {
-			list-style: none;
-		}
-		header a:link , a:visited {
-			text-decoration: none;
-			background-color: rgb(106, 110, 148);
-			color: rgba(17, 15, 17, 0.879);
-			display: block;
-			width: 400px;
-			text-align: left;
-			margin-bottom: 2px;
-		}
-		header a:hover , a:active {
-			background-color: yellow;
-		}
-		header li:nth-child(2):hover ,a:active {
-			font-size: 22px;
-		}
-		body label, select {
-			color: brown;
-			text-align: left;
-			font-size: 22px;
-		}
-		input {
-			font-size: 22px;
-			background-color: bisque;
-			width: 400px;
-			border-color: blue;
-			height: 50px;
-		}
-		input:hover {
-			background-color: rgb(191, 49, 79);
-		}
-
 	</style>
 </head>
+
 <body>
 
 	<header>
 		<ul>
-			<li><a href="www.google.com" target="_blank" title="Google Search Engine">Laser Measuring Machine</a></li>
-			<li><a href="www.VScode.com" target="_blank" title="Home">ACL's</a></li>
-			<li><a href="www.css.com" target="_blank" title="css">Markator and Torque Controllers </a></li>
+			<li><a href="www.google.com" target="_blank" title="Google Search Engine">LOGIN </a></li>
+			<li><a href="www.VScode.com" target="_blank" title="Home">USER MANUAL </a></li>
+			<li><a href="www.css.com" target="_blank" title="css">BROWSE </a></li>
 		</ul>
 	</header>
 
 	<h1 style="text-align: center;">Tenneco Equipment Register  </h1>
-	<p style="text-align: center;"> This Web application was created with the sole purpose of keeping track of maintenance inventry  </p>
-
-	<Label for="Personnel">User Logging in </Label>
-	<select name="Personnel" id="Personnel">
-		<option value="---">None</option>
-		<option value="Yamkela">Yamkela</option>
-		<option value="Derek">Derek</option>
-		<option value="Lawrence">Lawrence</option>
-		<option value="Wallace">Wallace</option>
-		<option value="Andiswa">Andiswa</option>
-	</select>
+	<div id="inbox">
+		<p id="box"> This Web application was created with the sole purpose of keeping track of maintenance inventry  </p>
+	</div>
 	
-	<article>
-		<p class="Yara">Is this class the direct child of the article ?</p>
-	</article>
-	<p>where is <a href="www.manutd.com" target="_blank" title="old trafford">Old Trafford</a> ?</p>
-	<p>There should be insertions being pushed to github</p>
-	<p>Try remember how we commit and push to github so we move on to pulling from </p>
+	<p>Please select which machine spare is</p>
+	<div id="Spares">
+		<input type="button" value="ACL's" onclick="Weld()" ></input>
+		<script>
+			function Weld() {
+				window.location.assign("tables.html")
+			}
+		</script>
+		
+		<input type="button" value="Laser Measuring Machine" onclick="Tech()"></input>
+		<script>
+			function Tech() {
+				window.location.assign("download.htm")
+			}
+		</script>
+		
+		<input type="button" value="Torque Controllers " onclick="Mech()"></input>
+		<script>
+			function Mech() {
+				window.location.assign("download.htm")
+		}
+		</script>
+		
+		<input type="button" value="Markator/Telesis" onclick="Tool()"></input>
+		<script>
+			function Tool() {
+				window.location.assign("download.htm")
+		}
+		</script>
 
-	<p>Please select which Department you work for ?</p>
-	<input type="button" value="Weld Technicians" onclick="Weld()" ></input>
-	<script>
-		function Weld() {
+		<input type="button" value="Orders" onclick="Order()"></input>
+		<script>
+			function Orders() {
+				window.location.assign("download.htm")
+		}
+		</script>
+	</div>
+
+	<div id="Reports">
+		<p style="text-align:center ;"> Overview </p>
+		<input type="button" value="Most Used Spares" onclick="MUS()"></input>
+		<script>
+			function MUS() {
+				window.location.assign("download.htm")
+		}
+		</script>
+
+		<input type="button" value="Recently Used Parts" onclick="RUS()"></input>
+		<script>
+			function Orders() {
 			window.location.assign("download.htm")
 		}
-	</script>
-	<h2 id="Tech" onclick="Tech()">Automation</h2>
-	<h2 id="Mech" onclick="Mech()">Mechanician</h2>
-	<h2 id="Tool" onclick="Tool()">Toolmaker</h2>
-
+		</script>
+	</div>
 
 </body>
 </html>

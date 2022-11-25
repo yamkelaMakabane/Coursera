@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tenneco Maintenance Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="strapcss.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			background-image: url('https://img.freepik.com/premium-vector/production-automation-flat-vector-illustration-male-female-factory-workers-engineers-cartoon-characters-smart-manufacturing-process-robotic-equipment-futuristic-high-tech-machinery_126283-2673.jpg?w=2000');
+		}
+	</style>
+</head>
+
+<body>
+    <header>
+			
+          <div class="container">
+				<nav id="header-nav" class="navbar navbar-default">
+					<div class="navbar-header">
+							<a href="https://www.tenneco.com/products-brands/clean-air" target="_blank" class="pull-left visible-md visible-lg">
+								<div id="log" alt="logo"></div>
+							</a>
+					
+
+					<div class="navbar-brand">
+						<a href="file:///C:/Users/Yamkela%20Tshaka/Coursera/strapnew.html" >Tenneco Equipment Register</a>
+					</div>
+
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#collapsable-nav" aria-expanded="false">
+					<span class="sr-only">toggle navigations</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					
+					<div id="collapsable-nav" class="collapse navbar-collapse">
+						<ul id="tg-list" class="nav navbar-nav navbar-right">
+							<li>
+								<a href="address.html"><span class="glyphicon glyphicon-search"></span>
+								<br class="hidden-xs">Search</a>
+							</li>
+							<li>
+								<a href="#" ><span class="glyphicon glyphicon-trash"></span> 
+								<br class="hidden-xs"> Recycle Bin</a>
+							</li>
+						</ul> 
+					</div>
+
+               <!-- <div id="ten">
+                    <a href="tenneco.html" target="_blank" title="Tenneco values" > Tenneco Values</a>
+                </div>
+                <div id="Add">
+                     <p> Address <br> Cnr Libertas and Struanway , Straundale , PE</p>
+                </div>-->
+				</nav>
+			</div>
+    </header>
+	
+	<div class="container">
+    <h1 style="text-align: center;">Maintenance Capture  </h1>
+	<div id="inbox">
+		<p id="box"> This Web application was created with the sole purpose of keeping track of maintenance inventry  </p>
+	</div>
+
+        <div class="Bord">
+	    <div class="Spares">
+            <div class="col-xs-12">
+				<p>Please select which machine spare is</p>
+		        <input type="button" value="ACL's" onclick="Weld()" ></input>
+		            <script>
+			            function Weld() {
+				            window.location.assign("tables.html")
+			            }
+		            </script>
+            </div>
+        </div>
+        <div class="Spares">
+            <div class="col-xs-12">
+		        <input type="button" value="Laser Measuring Machine" onclick="Tech()"></input>
+		        <script>
+			        function Tech() {
+			    	    window.location.assign("download.htm")
+			        }
+		        </script>
+		    </div>
+        </div>
+        <div class="Spares">
+            <div class="col-xs-12">
+		        <input type="button" value="Torque Controllers " onclick="Mech()"></input>
+		        <script>
+			        function Mech() {
+				        window.location.assign("download.htm")
+		            }
+		        </script>
+            </div>
+        </div>
+        <div class="Spares">
+            <div class="col-xs-12">
+		        <input type="button" value="Markator/Telesis" onclick="Tool()"></input>
+		        <script>
+			        function Tool() {
+				        window.location.assign("download.htm")
+		            }
+		        </script>
+            </div>
+        </div>
+        <div class="Spares">
+            <div class="col-xs-12">
+		        <input type="button" value="Orders" onclick="Orders()"></input>
+		        <script>
+			        function Orders() {
+				        window.location.assign("download.htm")
+		            }
+		        </script>
+            </div>
+	    </div>
+        </div>
+	
+    
+        <div class="big">
+	        <div id="Reports">
+		        <p style="text-align:center ;"> Overview </p>
+                <div class="col-xs-6 col-sm-6">
+		            <input type="button" value="Most Used Spares" onclick="MUS()"></input>
+		            <script>
+			            function MUS() {
+				            window.location.assign("download.htm")
+		                }
+		            </script>
+                </div>
+            </div>
+            <div id="Reports">
+                <div class="col-xs-6 col-sm-6">    
+		            <input type="button" value="Recently Used Parts" onclick="RUS()"></input>
+		            <script>
+			            function RUS() {
+			                window.location.assign("download.htm")
+		                }
+		            </script>
+                </div>
+	        </div>
+            <div id="Reports">
+                <div class="col-xs-6 col-sm-6">    
+		            <input type="button" value="All Used Parts" onclick="AUS()"></input>
+		            <script>
+			            function AUS() {
+			                window.location.assign("download.htm")
+		                }
+		            </script>
+                </div>
+	        </div>	
+        </div>
+	<h1> Lets get started </h1>
+	<script>
+		var scan = "825369584";
+		var a = function() {
+			if (scan == "") {
+				console.log("ready for equipment scan")
+			}
+			else 
+			{
+				console.log("Barcode scanned " + scan)
+			}
+		}
+		a();
+	</script>
+	<script>
+		var lee = "3" ;
+		function y() {
+			
+				console.log( lee + " could be a fruitful one" )			
+		}
+		y()	
+	</script>
+<!-- This is for assigning part to a specific line -->
+	<script>
+		let Line ;
+		function Panther(Line) {
+			// if (Line === undefined ) {
+			// 	console.log("This is for a Project")
+			// }
+			// else {
+			// console.log("To be used at "+ Line)
+			// }
+			Line = Line || "project" ; 
+			console.log("this is for a " + Line);
+		}
+		Panther("ACL_3");
+		Panther()
+		Panther("Ford_EOL4");
+	</script>
+
+	<script>
+		let mechanician = new Object();
+		mechanician.name = "Mseki Maponono";
+		mechanician.nickname = "Msera";
+		mechanician.title = new Object();
+		mechanician.title.planner = "Siyabonga ";
+		console.log(mechanician.name + " has taken a spare. " + mechanician.nickname + " please return the faulty part to " + mechanician.title.planner);
+
+		let auto = {
+			name: "Yamkela",
+			title :{
+				user: "Technician",
+				start: "april"
+			}
+		}
+		console.log("Who accessed the system : "+ auto.name)
+	</script>
+
+	<!-- Functions with a function -->
+	<script>
+		function divider(numb) {
+			var outs = function(y) {
+				return numb-y;
+			}
+			return outs;
+		}
+		var present = divider(2022);
+		console.log(present(1997) +" is how old you currently are")
+
+		function argue( b , operate) {
+			return operate(b);
+		}
+		var result = argue(2 , present);
+		console.log(result);
+	</script>
+
+	<script>
+		function price(rounded) {
+			var cheque = function(L) {
+				return rounded-L ;
+			}
+			return cheque ;
+		}
+		var print = price(63);
+		console.log( print(5)+ "was saved")
+
+		let w={v:1};
+		let z = w ;
+		console.log(z.v)
+		z.v = 25 ;
+		console.log(w.v)   //passing or copying a value using reference.
+		
+	</script>
+
+	<script>
+			function linga () {
+			console.log(this);
+			this.Machine = "leaktester";
+		}
+		linga();
+		console.log(window.Machine)
+	</script>
+
+	<script>
+		var dibanisa = {}
+		dibanisa.PLC = "Siemens"
+		dibanisa.PLC1 = "Allen Bradley"
+		dibanisa.which = function () {
+			console.log ("We're using a " + dibanisa.PLC + " for Tenneco operations please keep it standard")
+			console.log("use a "+ dibanisa.PLC1 + " in case we run out of the " + dibanisa.PLC )
+		}
+		dibanisa.which();
+	</script>
+
+	<script>
+		// immedialtely invoked function expression
+		(function (label) {
+			console.log("this should immediately invoke with a parenthesis at the end. "+ label + " label needed label in paranthesis"  )
+		})("not needed") 
+	</script>
+	</div>
+</body>
+</html>
